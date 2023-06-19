@@ -1,0 +1,9 @@
+amass enum -d domain.com
+regxfqdns.py amassoutput.txt > out.txt
+
+gobuster dns -d domain.com -w /usr/share/wordlist/path
+
+check200.go urls.txt #check for 200 responses, does not include 302 or 301 
+yet
+
+fqdnsfromurls.py listofurls.txt
